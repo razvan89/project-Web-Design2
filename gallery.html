@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:300,400" rel="stylesheet">
+   <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="AXIT - logo"/></a>
+            <label for="meniu-mobil">
+            <img src="images/mobile-menu.png" />
+        </label>
+        <input type="checkbox" id="meniu-mobil" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>   
+    <div id="gallery">
+      <div class="cotainer"> 
+      <img src="images/prev.png" class="prev"/>
+      <img src="images/prev.png" class="next"/>
+      <ul>
+        <li><img src="images/magdalena_cizmasu_comoara.jpg"/></li>
+        <li><img src="images/dascaliu_catalin_4.jpg"/></li>
+        <li><img src="images/dascaliu_catalin_1.jpg"/></li>
+        <li><img src="images/dinu_alexandra_3.jpg"/></li>
+        <li><img src="images/dinu_alexandra_1.jpg"/></li>
+        <li><img src="images/magdalena_cizmasu_gargarita.jpg"/></li>
+        <li><img src="images/magdalena_cizmasu_londra1.jpg"/></li>
+      </ul>
+
+  
+  <script type="text/javascript" src="jquery-1.4.2.js"></script>
+  <script type="text/javascript" src="jcarousellite_1.0.1.js"></script>
+  <script type="text/javascript" src="jquery.easing.1.1.js"></script>
+  
+  <script>
+  
+  $(function() {
+  var nr = 5;
+  if(window.innerWidth <= '480'){ 
+  	nr = 1;
+  }
+  
+    $("#gallery").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev",
+		auto:1000,
+        visible: nr,
+        //easing: "backin",
+		speed:2000
+    });
+});
+</script>
+      </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+        <div id="social-media-icons-footer">
+                <a href=""><span class="fab fa-facebook-f"></span></a>
+                <a href=""><span class="fab fa-twitter"></span></a>
+                <a href=""><span class="fab fa-google-plus-g"></span></a>
+                <a href=""><span class="fab fa-pinterest"></span></a>
+                <a href=""><span class="fab fa-instagram"></span></a>
+                <a href=""><span class="fab fa-stumbleupon"></span></a>
+                <a href=""><span class="fa fa-rss"></span></a>
+                
+            </div>
+        <div><p>© 2015 Axure Themes</p></div>
+        </div>
+    </div>          
+</body>
+</html>

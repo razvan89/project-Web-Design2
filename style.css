@@ -1,0 +1,585 @@
+/* reset */
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #86878b;
+    margin: 0;
+    --culoare: #ff9b51
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size:  15px;
+    font-weight: 600
+}
+.container {
+    max-width: 1132px;
+    margin: auto;
+    padding: 21px 15px 22px;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both
+}
+input:focus {
+    outline: none
+}
+/* header */
+#header {
+    background: black
+}
+#header ul {
+    float: right
+}
+#header ul li {
+    float: left;
+    margin-left: 48px;
+    line-height: 28px
+}
+#header label, #header input {
+    display: none
+}
+#header li a {
+    transition:all .4s;
+    font-size: 14px
+}
+#header li a:hover, #header li a:active {
+    color: var(--culoare)
+}
+
+/* hero section */
+#hero-section {
+    background: url('images/banner-top.jpg') no-repeat center top;
+    background-size: cover
+}
+#hero-section .container {
+    padding: 110px 15px
+}
+#hero-left, #hero-right  {
+    width: 50%;
+    float: left
+}
+#hero-left {
+    font-family: 'Raleway';
+    color: #fff
+}
+#hero-left  h1 {
+    font-size: 36px;
+    font-weight: normal
+}
+#hero-left h1::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background: #fff;
+    margin: 40px 0;
+}
+#hero-left p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 50px;
+    width: 90%
+}
+#hero-left a {
+    padding: 14px 30px;
+    transition: all .4s;
+    border: 2px solid #fff;
+}
+
+#hero-left a:hover, #hero-left a:active  {
+    background: #fff;
+    color: var(--culoare)
+}
+#hero-right form {
+    width: 65%;
+    float: right;
+    background: #fff
+}
+#hero-right h2 {
+    font-size: 20px;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 54px;
+    color: #333;
+    margin: 0
+}
+#hero-right h2 span {
+    color: var(--culoare)
+}
+#hero-right input {
+    display: block;
+    margin: 30px auto 0;
+    width: 85%;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px 13px;
+    transition: all .4s
+}
+#hero-right input:focus {
+    border-bottom: 1px solid #333;
+}
+#hero-right input[type="submit"] {
+    width: 100%;
+    background: var(--culoare);
+    color: white;
+    border: none;
+    height: 54px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer
+}
+/* social media section */
+#social-media-section {
+    box-shadow: #b7b7b7 0 1px 2px;
+}
+#social-media-section .container{
+   display:flex;
+   align-items:center
+}
+#social-media-text {
+    width: 40%;
+    float: left
+}
+#social-media-text h2, #social-media-text p {
+    margin: 0
+}
+#social-media-text h2{
+    color:black
+}
+#social-media-icons {
+    float: left;
+    width: 60%;
+    display:flex;
+    justify-content:space-around
+
+}
+#social-media-icons span {
+    font-size: 40px;
+    color: #ccc
+}
+#social-media-icons span:hover, #social-media-icons span:active{
+    color: var(--culoare)
+}
+
+
+/***** tab-section ******/
+#tab-section{
+  background: #f5f5f5;
+  margin-top:2px
+ }
+ #tab-section .container{
+   position:relative
+
+ }
+#tab-left,  #tab-right{
+   width:65%;
+   float:left;
+   margin-bottom:114px;
+   margin-top:147px;
+   position:relative
+ }
+#tab-section input{
+ display:none
+ }
+
+ #tab-section label{
+   display:block;
+   width:110px;
+   height:110px;
+   background:#333;
+   margin-bottom:1px;
+   text-align:center;
+   color:white;
+   line-height:110px;
+   font-weight:600;
+   cursor:pointer;
+   margin-right:102px;
+   transition: all 1s  
+ }
+  #tab-section label:hover ,  #tab-section label:active{
+     background:#ff8b38;     
+  }
+  
+.tab-content{
+  /*width:40%;*/
+  position:absolute;
+  /*top:156px;*/
+  top:0;
+  left:211px;
+  right: 20px;
+  display:none
+ 
+}
+.tab-content h2{
+    color:black
+}
+ 
+ #tab-section input:checked + .tab-content{
+  display:block
+  }
+#tab-left a{
+      background: #333;
+      display:block;
+      width:119px;
+      height:44px;
+      text-align:center;
+      transition: all .4s;
+      line-height:44px
+    }
+#tab-left a:hover ,#tab-left a:active{
+  background:var(--culoare);
+  color:#fff
+ }
+ #tab-right{
+   width:35%
+  }
+ #tab-right img{
+    width:100%
+ }
+ 
+ /****** sublist-section ******/
+ 
+ #sublist-section {
+    background:white
+  }
+ 
+ #sublist-left{
+    width:50%;
+    float:left;
+    margin-top:127px;
+    margin-bottom:166px
+  }
+ 
+#sublist-right{
+  width:50%;
+  margin-top:90px;
+  padding-left:60px;
+  float:left
+
+ }
+
+#sublist-right h2{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+#bara{
+ width:100px;
+ height:2px;
+ margin-bottom: 25px;
+ background:var(--culoare)
+ }
+#sublist-right p{
+    margin-bottom: 30px
+}
+
+#sublist-right img{
+    margin-right: 30px;
+    display: block;
+    margin-bottom: 60px;
+    float: left
+}
+
+#sublist-right span{
+    font-weight: 600;
+    color: #333
+}
+
+#sublist-right img:hover{
+    transform: scale(1.1)
+}
+
+/**** bottom****/ 
+
+#bottom-section{
+    height: 320px;
+    background: url('images/imagine-footer.jpg') no-repeat center top;
+    background-size: cover
+}
+#bottom-section h1, #bottom-section p{
+    font-family: 'Raleway';
+    font-weight: 300;
+    text-align: center;
+    color: white   
+}
+
+#bottom-section p{
+    font-weight: 200
+}
+#bara{
+    width: 100px;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 30px;
+    background: white
+}
+
+#bottom-section a{
+    padding: 14px 30px;
+    transition: all .4s;
+    border: 2px solid white
+}
+#bottom-section a:hover , #bottom-section a:active{
+    background: var(--culoare)
+}
+#buton{
+    margin: auto
+}
+#unu{
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+    margin: auto
+}
+/*** footer ***/
+
+#footer{
+    height: 100px;
+    background: black
+}
+#social-media-icons-footer{
+    float: left;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:center
+}
+#social-media-icons-footer span {
+    font-size: 20px;
+    color: #ccc;
+    margin-left: 30px
+}
+#social-media-icons-footer span:hover {
+    color: var(--culoare)
+}
+
+/*****contact main****/
+#main-contact h1{
+    color: black
+}
+#address span{
+    font-weight: 600;
+    color: black
+}
+/*#address{
+    color: red
+}*/
+iframe{
+	    width:100%;
+       /* float:right;
+	    margin-right:530px*/
+	 }
+/******* main-about ******/
+
+#main-about h2 , #main-about h3{
+    color: black
+}
+#main-about {
+    font-size: 20px
+}
+#main-about ul{
+    list-style: inside;
+    font-weight: 600
+}
+#footer p{
+    text-align: center
+}
+/*******gallery**********/
+
+#gallery{
+	    margin:auto;
+        padding:200px 0;
+        position:relative
+	   }
+#gallery .container{
+    background: grey
+}
+  .gallery li img{
+	    height:200px;
+	    }
+.prev, .next
+	   {
+	   position:absolute;
+	   height:30px;
+	   z-index:2;
+	   opacity:.4;
+	   top:50%;
+	   cursor:pointer;
+	   transition: all .5s;
+	   transform:translate(0,-50%)
+	    }
+      .next{
+	   right:0;
+	   transform:translate(0,-50%) rotateY(180deg)
+	   }	
+	   .prev:hover, .next:hover{
+	    opacity:1;
+		
+	    }
+
+/*********services **************/
+
+#main-services p{
+      text-align: center;
+    margin-bottom: 80px;
+    font-size: 18px
+}
+#main-services h2{
+    color: black;
+    text-align: center  
+}
+
+#main-services img{
+    /*float: left;*/
+    cursor: pointer;
+    transition: all .4s;
+    box-shadow: 2px 2px 10px 3px;
+    margin:20px
+}
+#main-services .imagini{
+     display:flex;
+    justify-content:space-around;
+}
+#main-services img:hover{
+    transform: scale(1.1)
+}
+
+/********* mobil *****/
+
+
+@media screen and (max-width: 780px){
+     
+    /* header mobil */
+    #header img {
+        width: 25%;
+       /* float: right*/
+    }
+    #header label, #header label img {
+        display: block;
+        float: right
+    }
+    #header ul {
+        position: static;
+        display:none;
+        float: none;
+        transition: all 1s;
+        text-align: center
+        /*clear: both*/
+    }
+    #header input:checked + ul {
+        display:block;
+
+    }
+    #header ul li {
+        float: none;
+        text-align: center;
+        border-bottom: 1px solid white;
+        margin:6px 0 
+    }
+    #header li a:link, #header li a:visited {
+        font-size: 18px;
+        text-align: center
+    }
+    
+    /*****hero section ******/
+    
+    
+#hero-left, #hero-right  {
+    width: 100%;
+    float: none
+}
+#hero-section .container {
+    padding: 40px 15px
+}
+    #hero-right form {
+    width: 100%;
+    margin-top:50px;
+    background: #fff
+    }
+
+
+    /*********** social media section ************/
+    
+#social-media-section .container{
+        flex-direction:column
+    }  
+    #social-media-text h2 , #social-media-icons{
+        text-align: center
+    }
+#social-media-text , #social-media-icons {
+    width: 100%;
+    padding: 5px;
+    float: none 
+    }
+#social-media-icons {
+    display: block;
+    float: none
+    }
+    
+
+    /*************** tab-section *********/
+    
+    
+#tab-left, #tab-right {
+    width: 100%;
+    float: none;
+    margin-bottom: 130px;
+    margin-top: 10px;
+    position: static;
+    }
+  .tab-content{
+    left: 150px;
+    right: 10px;
+    }
+    
+    /******** sublist-section ************/
+    
+    
+#sublist-left , #sublist-right {
+    width: 100%;
+    padding:0;
+    float: none;
+    margin:0
+}
+#sublist-right h2 {
+    text-align: center;
+    color:black;
+    margin-bottom: 0
+}
+#sublist-left img{
+     width: 100%;
+    }
+#sublist-right img{
+        margin-bottom: 80px;
+    margin-right: 20px;
+    }
+
+/******* services *******/
+    #main-services img{
+      width:90%
+    }
+    #main-services p{
+    margin-bottom: 20px
+    }
+#main-services .imagini{
+        flex-direction: column;
+        align-items: center
+    }
+
+    /****** contact **********/
+    
+    
+iframe{
+    width:100%
+    }
+}
